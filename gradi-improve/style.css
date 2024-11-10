@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins" sans-serif;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: #1111;
+}
+
+.logo{
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    z-index: 5;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 20px;
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   transition: 0.5s;
+   background: black;
+}
+
+.bars{
+    background: white;
+    width: 50px;
+    height: 50px;
+    display:  none;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+
+.div_btn{
+    margin-top: 100px;
+}
+
+.navbar{
+    color: #fff;
+    display: flex;
+    position: relative;
+    list-style: none;
+    gap: 10px;
+}
+
+.link{
+    color: #ffff;
+    font-size: 1.2rem;
+    margin-left: 40px;
+    margin-right: 60px;
+    transition: 200ms;
+}
+
+.link:hover{
+    color: #fb911f;
+}
+
+.esto{
+    color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn-resrevation{
+    padding: 10px 20px;
+    color: white;
+    background: #fb911f;
+    border-radius: 200px;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.btn-resrevation:hover{
+    background: #fff;
+    color: green;
+    transition: ease-out;
+}
+
+body{
+    background-image: url(images/pexels-natasha-filippovskaya-2203043-4665707.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.baniaire{
+    margin-top: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.baniaire .contenaire{
+    max-width:70%;
+    margin: center;
+}
+
+.baniaire .contenaire h2{
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+.contenue p:nth-child(2){
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.div_btn{
+    margin-top: 150px;
+}
+
+.btn1{
+    color: #fff;
+    background:#fb911f;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 15px;
+    border-radius: 20px;
+}
+
+.btn1:hover{
+    background:#f0c79b ;
+    color: black;
+}
+
+.btn2{
+    color: #fff;
+    background: #2a4973;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 15px;
+    border-radius: 20px;
+    transition: 200ms;
+}
+
+.btn2:hover{
+    color: black;
+    background: #8faacf;
+}
+
+.lin{
+    color: #ffff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 250px;
+}
+
+.lin:hover{
+    background: white;
+    padding: 10px;
+    color: black;
+    border-radius: 20px;
+}
+
+
+
+.menu{  
+        padding: 10px; /* Garde un padding interne cohérent */  
+        z-index: 5;  
+        display: flex;  
+        flex-direction: column;  
+        align-items: flex-start; /* Aligne les éléments au début à gauche */  
+        justify-content: flex-start; /* Aligne le contenu en haut */  
+        background: black;  
+        height: auto; /* Adapté à la taille du contenu */  
+        width: 100px; /* Largeur fixe selon votre besoin */  
+        list-style: none;  
+        border-radius: 20px;  
+        position: absolute;  
+        top: -200px; /* Position initiale hors de l'écran */  
+        right: 20px;  
+        display: none; /* Gardé caché par défaut */  
+        transition: opacity 0.5s ease, display 0s 0.5s; /* Transition pour l'opacité */  
+    }  
+    
+    .menu li {  
+        margin: 50px 0; /* Espace vertical entre les éléments du menu */  
+    }  
+
+.reservation{
+    background: #fb911f;
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.reservation:hover{
+    background: white;
+    color: black;
+}
+
+.berger{
+    position: relative;
+}
+
+.wriper{
+    display: inline-flex;
+}
+
+.static_text{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 20px;
+    position: absolute;
+    top: 0;
+    transition: top 0.3s;
+    z-index: 1;
+}
+
+
+
+@media only screen and (max-width:600px) {
+
+    .bars{
+        display: block;
+    }
+
+    .logo{
+        font-size: 1.8rem;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .div_btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .berger{
+        height: 0;
+    }
+}
